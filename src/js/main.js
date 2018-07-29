@@ -16,6 +16,8 @@
             request.open('POST', searchFormAction);
             request.setRequestHeader('Content-Type', 'application/json');
             request.send(JSON.stringify({location: searchInput.value}));
+            // Disable the button and show a loading indicator
+            submitButton.style.zIndex = -1;
         } else {
             // Prompt the user to type something into the form
             searchInput.focus();
@@ -67,6 +69,8 @@
         }
         output += '</div>';
         resultsDiv.innerHTML = output;
+        // Restore the submit button
+        submitButton.style.zIndex = 0;
     }
 
 })(window);

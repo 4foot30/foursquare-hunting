@@ -1,0 +1,16 @@
+.form {
+    position: relative;
+}
+
+.form__submit-wrapper {
+    background-color: $color-1;
+    background-image: url('../img/loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+}
+
+.form__submit {
+    position: relative;
+}
