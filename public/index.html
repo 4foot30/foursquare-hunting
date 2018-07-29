@@ -10,6 +10,7 @@
         <title>Foursquare hunting</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
         <div class="container">
@@ -36,7 +37,8 @@
         </div>
         <!-- Include Faye so this page can receive messages from the node scripts -->
         <!-- Note: faye.js doesn't actually exist, Faye will intercept this request and work out what file to actually serve -->
-        <script type="text/javascript" src="/faye/faye.js"></script>
-        <script type="text/javascript" src="js/hunting.js"></script>
+        <script src="/faye/faye.js"></script>
+        <script src="js/dependencies/babel-polyfill/dist/polyfill.min.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

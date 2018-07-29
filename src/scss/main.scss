@@ -1,0 +1,19 @@
+@import "components/venue";
+
+// General styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // Make sure page will be no thinner than mobile portrait
+    // Changed from 320 to 300 to stop horizontal scrollbars appearing on
+    // browsers whose scrollbars overlay the body content (e.g. IE11)
+    // rather than have scrollbars outside the body content (e.g. IE9)
+    min-width: 300px;
+    @media only screen and (max-width: 319px) {
+        // Themes often disable horizontal scrolling, restore this on devices thinner than 320px
+        overflow-x: auto;
+    }
+
+}

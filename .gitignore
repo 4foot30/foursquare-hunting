@@ -1,2 +1,7 @@
 # Ignore everything installed by Node
 /node_modules/
+
+# Ignore public dependencies and compiled assets
+/public/js/dependencies/*
+/public/css/*
+/public/js/*
