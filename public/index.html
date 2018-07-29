@@ -19,9 +19,11 @@
                     <p>Find me some interesting venues near to:</p>
                     <form action="/explore" method="POST">
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="120 Holborn London EC1N 2TD">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-large">Search</button>
+                        <div class="submit-wrapper">
+                            <button type="submit" class="btn btn-primary btn-large">Search</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -32,7 +34,9 @@
                 </div>
             </div>
         </div>
+        <!-- Include Faye so this page can receive messages from the node scripts -->
+        <!-- Note: faye.js doesn't actually exist, Faye will intercept this request and work out what file to actually serve -->
+        <script type="text/javascript" src="/faye/faye.js"></script>
         <script type="text/javascript" src="js/hunting.js"></script>
-
     </body>
 </html>
