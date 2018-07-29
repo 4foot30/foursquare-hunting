@@ -61,7 +61,8 @@
                         client_secret: config.foursquareAuth.clientSecret,
                         v: '20190101',
                         ll: `${body.results[0].geometry.location.lat},${body.results[0].geometry.location.lng}`,
-                        query: postRequest.body.location
+                        query: postRequest.body.location,
+                        radius: 1610
                     },
                     headers: {
                         'User-Agent': 'Request-Promise'
