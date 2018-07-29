@@ -1,0 +1,2 @@
+# Ignore everything installed by Node
+/node_modules/
