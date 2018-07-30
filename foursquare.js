@@ -83,6 +83,14 @@
                         console.log(err);
                     }
                 );
+            } else {
+                console.log('Location not found, could not calculate latitude and longitude.');
+                // Broadcast an empty results set to the browser, which will
+                // trigger a visible error message
+                bayeux.getClient()
+                .publish('/apiResponse', {
+                    response: null
+                });
             }
         });
 
